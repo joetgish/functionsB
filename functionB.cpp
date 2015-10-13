@@ -1,0 +1,30 @@
+//Author:Emily Garcia
+//Created:Oct 13 2015
+//Description:
+#include <iostream>
+using namespace std;
+
+double feetToInches(double val);
+void  feetToInches(double& val1 , double& val2);
+
+int main ()
+{
+   
+   double num1 = 2.0;
+   double num2;
+   
+   //Test Case: Set #1
+   cout <<  feetToInches(num1) << endl;
+   feetToInches(num2, num1);
+   cout << num2 << endl;
+   return 0;
+}
+double feetToInches(double val)// Converts ft to in 
+{
+   return val*12;
+}
+void feetToInches(double& val1, double& val2)
+{
+   val1 = val2*12;
+   return;
+}
