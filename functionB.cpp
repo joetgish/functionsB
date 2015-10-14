@@ -12,6 +12,7 @@ void computerArea (double valA, double valB, double& valC);
 void computerArea (double valA, double valB, double& valArea, double& valPerimeter);
 void  stats(double valA, double valB, double valC, double valD, double& valE, double& valF);
 void calcAreaPerimeter(double radius, double& area, double& perimeter);
+double calcArea(double length, double width);
 
 int main ()
 {
@@ -45,13 +46,18 @@ int main ()
    num4 = 4;
    stats(num1, num2, num3, num4, num5, num6);
    cout << num5 << endl;
-   cout << num6 << endl;*/
+   cout << num6 << endl;
    
    //Test Case: Set #5
    num1 = 5;
    calcAreaPerimeter(num1, num2, num3);
    cout << num2 << endl;
-   cout << num3 << endl;
+   cout << num3 << endl;*/
+   
+   //Test Case: Set #5
+   num1 = 2.0;
+   num2 = 3.0;
+   cout << calcArea(num1, num2) << endl;
    
    return 0;
 }
@@ -84,11 +90,15 @@ void  stats(double valA, double valB, double valC, double valD, double& valE, do
    valE = (valA + valB + valC + valD) / 4;
    valF = valA + valB + valC + valD;
    return;
-}*/
+}
 void calcAreaPerimeter(double radius, double& area, double& perimeter)
 {
    const double PI = 3.1415;
    area = PI * (radius * radius);
    perimeter = 2 * PI * radius;
    return;
+}*/
+double calcArea(double length, double width)
+{
+   return length * width;
 }
