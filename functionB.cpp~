@@ -19,25 +19,34 @@ int main ()
    
    double num1, num2, num3, num4, num5, num6;// Declare variable
    
-/*   //Test Case: Set #1
+   //Test Case: Set #1
    num1 = 2.0;
-   cout <<  feetToInches(num1) << endl;
    feetToInches(num2, num1);
-   cout << num2 << endl;
+   
+   cout << "Expected: 24" << endl;
+   cout << "Actual: " << feetToInches(num1) << endl;
+   cout << "Expected: 24" << endl;
+   cout << "Actual: " << num2 << endl;
    
    //Test Case: Set #2
    num1 = 2.0;
    num2 = 5.0;
-   cout <<  computeRectangle(num1, num2) << endl;
    computerArea(num1, num2, num3);
-   cout << num3 << endl;
+   
+   cout << "Expected: 10" << endl;
+   cout << "Actual: " << computeRectangle(num1, num2) << endl;
+   cout << "Expected: 10" << endl;
+   cout << "Actual: " << num3 << endl;
    
    //Test Case: Set #3
    num1 = 2;
    num2 = 2;
    computerArea(num1, num2, num3, num4);
-   cout << num3 << endl;
-   cout << num4 << endl;
+   
+   cout << "Expected: 4" << endl;
+   cout << "Actual: " << num3 << endl;
+   cout << "Expected: 8" << endl;
+   cout << "Actual: " << num4 << endl;
    
    //Test Case: Set #4
    num1 = 1;
@@ -45,20 +54,31 @@ int main ()
    num3 = 3;
    num4 = 4;
    stats(num1, num2, num3, num4, num5, num6);
-   cout << num5 << endl;
-   cout << num6 << endl;
+   
+   cout << "Expected: 2.5" << endl;
+   cout << "Actual: " << num5 << endl;
+   cout << "Expected: 10" << endl;
+   cout << "Actual: " << num6 << endl;
    
    //Test Case: Set #5
    num1 = 5;
    calcAreaPerimeter(num1, num2, num3);
-   cout << num2 << endl;
-   cout << num3 << endl;*/
    
+   cout << "Expected: 78.5375" << endl;
+   cout << "Actual: " << num2 << endl;
+   cout << "Expected: 31.415" << endl;
+   cout << "Actual: " << num3 << endl;
    
+   //Test Case: Set #5
+   num1 = 2.0;
+   num2 = 3.0;
+   
+   cout << "Expected: 6" << endl;
+   cout << "Actual: " << calcArea(num1, num2) << endl;
    
    return 0;
 }
-/*double feetToInches(double val)// Converts ft to in 
+double feetToInches(double val)// Converts ft to in 
 {
    return val * 12;
 }
@@ -94,7 +114,7 @@ void calcAreaPerimeter(double radius, double& area, double& perimeter)
    area = PI * (radius * radius);
    perimeter = 2 * PI * radius;
    return;
-}*/
+}
 double calcArea(double length, double width)
 {
    return length * width;
