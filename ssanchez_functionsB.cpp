@@ -31,64 +31,64 @@ int main()
     const double E = 0.0001; // Used for asserting decimal values
     
     cout << endl << feetToInches(12) << endl;
-    assert(feetToInches(12) == 144);
+    //assert(feetToInches(12) == 144);
     feetToInchesConverter(inches, 3.300);
-    assert(fabs(inches - 39.6) < E);
+    //assert(fabs(inches - 39.6) < E);
     cout << inches << endl;
     cout << feetToInches(-3) << endl;
-    assert(feetToInches(-3) == -1);
+    //assert(feetToInches(-3) == -1);
     feetToInchesConverter(inches, .00001);
-    assert(fabs(inches - 0.00012) < E);
+    //assert(fabs(inches - 0.00012) < E);
     cout << inches << endl << endl;
     
     cout << computeRectangle(6, 3.66)<< endl;
-    assert(computeRectangle(6, 3.66)== 21.96);
+    //assert(computeRectangle(6, 3.66)== 21.96);
     computeArea(67, 76, area);
-    assert(fabs(area - 5092) < E);
+    //assert(fabs(area - 5092) < E);
     cout << area << endl;
     cout << computeRectangle(4, -1)<< endl;
-    assert(computeRectangle(4, -1) == -1);
+    //assert(computeRectangle(4, -1) == -1);
     computeArea(9, 12, area);
-    assert(fabs(area - 108) < E);
+    //assert(fabs(area - 108) < E);
     cout << area << endl << endl;
     
     computeAP(2, 12.6,  perimeter, area);
-    assert(fabs(perimeter - 29.2) < E);
-    assert(fabs(area - 25.2) < E);
+    //assert(fabs(perimeter - 29.2) < E);
+    //assert(fabs(area - 25.2) < E);
     cout << perimeter << endl;
     cout << area << endl;
     computeAP(12, -4,  perimeter, area);
-    assert(perimeter == -1);
-    assert(area == -1);
+    //assert(perimeter == -1);
+    //assert(area == -1);
     cout << perimeter << endl;
     cout << area << endl << endl;
     
     stats(12, 3, 7, 12, sum, mean);
-    assert(sum == 34);
-    assert(fabs(mean - 8.5) < E);
+    //assert(sum == 34);
+    //assert(fabs(mean - 8.5) < E);
     cout << sum << endl;
     cout << mean << endl;
     stats(-8, 1, 6.66, -4, sum, mean);
-    assert(sum == -4.34);
-    assert(fabs(mean + 1.085) < E);
+    //assert(sum == -4.34);
+    //assert(fabs(mean + 1.085) < E);
     cout << sum << endl;
     cout << mean << endl << endl;
 
     calcCircle(12.0, area, perimeter);
-    assert(fabs(perimeter - 75.36) < E);
-    assert(fabs(area - 452.16) < E);
+    //assert(fabs(perimeter - 75.36) < E);
+    //assert(fabs(area - 452.16) < E);
     cout << area << endl;
     cout << perimeter << endl << endl;
     calcCircle(-4, area, perimeter);
-    assert(perimeter == -1);
-    assert(area == -1);
+    //assert(perimeter == -1);
+    //assert(area == -1);
     cout << area << endl;
     cout << perimeter << endl << endl;
     
     cout << calcRectangleArea(22, 12)<< endl;
-    assert(calcRectangleArea(22, 12) == 264);
+    //assert(calcRectangleArea(22, 12) == 264);
     cout << calcRectangleArea(0, 1)<< endl << endl;
-    assert(calcRectangleArea(0, 1) == 0);
+    //assert(calcRectangleArea(0, 1) == 0);
 
     return 0;
 }
