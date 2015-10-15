@@ -2,7 +2,7 @@
 ***********************************************************************************
 Name: Samuel Sanchez
 Date: 13 October 2015
-Description: Implements a series of functions with a return type of void, int, or double
+Description: Implements a series of functions based on pass by reference and pass by copy
 ***********************************************************************************
 */
 #include <iostream> // cin, cout
